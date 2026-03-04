@@ -1,4 +1,4 @@
-# The project
+# The project 
 
 ChillChain is an IoT platform for refrigerated transport sharing, combining a logistics marketplace for shipment booking with real-time cold chain monitoring and ML-based anomaly detection.
 
