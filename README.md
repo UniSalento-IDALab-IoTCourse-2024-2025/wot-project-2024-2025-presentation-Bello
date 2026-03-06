@@ -4,7 +4,7 @@ ChillChain is an IoT platform for refrigerated transport sharing, combining a lo
 
 The system is organised as in the image
 
-![Architecture](images/architettura_IoT.png)
+![Architecture](images/architettura_IoT_C4.png)
 
 A refrigerated vehicle equipped with sensors streams telemetry data via MQTT to a broker. Two Python microservices handle the data pipeline: the Fridge Streamer simulates sensor readings from CSV datasets and publishes them on MQTT, while the Anomaly Detector subscribes to the same topic, runs an LSTM autoencoder for anomaly detection, and publishes alerts on a separate topic. The Spring Boot backend subscribes to both MQTT topics, persisting telemetry to MongoDB and converting anomaly messages into notifications. The React frontend consumes the REST API for fleet management, shipment booking, telemetry dashboards, and anomaly alerts.
 
